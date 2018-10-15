@@ -15,7 +15,6 @@ public class OverloadingMethods_08 {
         overloadingMet.method(" z parametrem i z dodatkowym parametrem", 5);
         overloadingMet.method(4, " paramter String ");
 
-
     }
 
     public void method(){
