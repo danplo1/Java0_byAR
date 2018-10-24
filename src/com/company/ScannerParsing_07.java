@@ -19,7 +19,7 @@ public class ScannerParsing_07 {
         try{
             int data = Integer.parseInt(word);
             System.out.println(data);
-        } catch (Exception e){
+        } catch (ExceptionMain e){
             System.out.println("Niepoprawna liczba!");
             main (null);
         }*/
