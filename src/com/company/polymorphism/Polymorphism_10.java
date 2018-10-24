@@ -19,7 +19,7 @@ public class Polymorphism_10 {
 
         studentService.service(studentOnLine);
         studentService.service(dayStudent);
-        studentService .service(dayStudentDifferent);
+        studentService.service(dayStudentDifferent);
 
     }
 }
