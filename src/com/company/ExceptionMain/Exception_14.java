@@ -1,5 +1,7 @@
 package com.company.ExceptionMain;
 
+import com.company.ExceptionMain.MyException.MyException;
+
 import java.util.Scanner;
 
 /**
@@ -10,6 +12,7 @@ import java.util.Scanner;
  */
 
 public class Exception_14 {
+
     public static void main(String[] args) throws Exception {
 
         Exception exc = new Exception();
@@ -17,12 +20,19 @@ public class Exception_14 {
 
     }
 
-    public void loadChar() throws Exception {
+
+    public void loadChar() throws MyException {
+
 
         Scanner scanner = new Scanner(System.in);
         System.out.println(" Wprowadz liczbę: ");
 
         String sc = scanner.nextLine();
+
+        if (sc.length() == 0) {
+            System.out.println(new MyException("Pusty ciąg znaków!"));
+            loadChar();
+        }
 
         int i = 0;
 
@@ -30,13 +40,11 @@ public class Exception_14 {
             i = Integer.parseInt(sc);
 
             System.out.println("Liczba " + i);
-        }catch (Exception ex){
+        } catch (Exception ex) {
+            System.out.println(new MyException("Pusty ciąg znaków!"));
             ex.printStackTrace();
-            System.out.println("Houston mamy błąd!");
-            //loadChar();
-
-        }finally{
             loadChar();
+
         }
     }
 
