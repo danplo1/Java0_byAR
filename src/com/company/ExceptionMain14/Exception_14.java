@@ -1,6 +1,6 @@
-package com.company.ExceptionMain;
+package com.company.ExceptionMain14;
 
-import com.company.ExceptionMain.MyException.MyException;
+import com.company.ExceptionMain14.MyException.MyException;
 
 import java.util.Scanner;
 
