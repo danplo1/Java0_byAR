@@ -22,6 +22,6 @@ public class RandomNumber {
             int position = ran.nextInt(62);
             str = str + string.charAt(position);
         }
-        System.out.println("Wygenerowany kod: " + str);
+        System.out.println("Wygenerowany jednorazowy kod: " + str);
     }
 }
