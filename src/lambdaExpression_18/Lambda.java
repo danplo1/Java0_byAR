@@ -2,11 +2,11 @@ package lambdaExpression_18;
 
 /**
  * Created by Daniel_D'AGE on 29.10.2018.
- * * Wyrażenia Lambda to funkcje anonimowe, nienazwane, nie mają żadnej dekalracji, a srosuje sie je po to aby móc
+ * * Wyrażenia Lambda to funkcje anonimowe, nienazwane, nie mają żadnej dekalracji, a stosuje sie je po to aby móc
  * skorzystać z metody abstrakcyjnej, nie przesłaniająć jej. ->
  * Jeżeli inicjujemy wyrażenie lambda na bazie interfejsu, to w tym interfejsie nie moze znajdować sie więcej niż jedna
  * metoda abstrakcyjna!
- * @ Functional Interface - interfejs funkcjonanych
+ * @ Functional Interface - interfejs funkcjonalny
  *
  * Zbyt duza ilośc lambd powoduje spadek czytelnosci kodu
  */
