@@ -1,7 +1,6 @@
-package formattingDates_20;
+package formattingDates_LocalDateTime20_21;
 
 import java.text.SimpleDateFormat;
-import java.time.LocalDateTime;
 import java.util.Date;
 
 /**
