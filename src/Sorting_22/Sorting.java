@@ -11,6 +11,9 @@ import java.util.*;
 public class Sorting {
     public static void main(String[] args) {
 
+
+
+
         /*HashSet<String> words = new HashSet<>();
         words.add("Jeden");
         words.add("Dwa");
@@ -23,36 +26,62 @@ public class Sorting {
         words2.add("Dwa");
         words2.add("Trzy");
         words2.add("Cztery");
-        System.out.println("\nSłowa TreeSet: " + words2);*/
+        System.out.println("\nSłowa TreeSet: " + words2);
 
 
-        Map<String, String> words1 = new HashMap<>();
-        words1.put("one", "jeden");
-        words1.put("two", "dwa");
-        words1.put("three", "trzy");
-        words1.put("four", "cztery");
-        words1.put("five", "pięć");
-        for (Map.Entry<String, String> entry : words1.entrySet()) {
+        Map<String, String> words4 = new HashMap<>();
+        words4.put("one", "jeden");
+        words4.put("two", "dwa");
+        words4.put("three", "trzy");
+        words4.put("four", "cztery");
+        words4.put("five", "pięć");
+        for (Map.Entry<String, String> entry : words4.entrySet()) {
             System.out.println("K: " + entry.getKey() + " V " + entry.getValue());
         }
 
         System.out.println("-----------------------");
 
-        Map<String, String> words3 = new TreeMap<>(words1);
+        Map<String, String> words3 = new TreeMap<>(words4);
         for (Map.Entry<String, String> entry2 : words3.entrySet()) {
             System.out.println("K: " + entry2.getKey() + " V " + entry2.getValue());
 
-            System.out.println("-----------------------");
+            System.out.println("-----------------------");*/
 
 
+        List<String> words4 = new ArrayList<>();
+        words4.add("jeden");
+        words4.add("dwa");
+        words4.add("trzy");
+        words4.add("cztery");
+        words4.add("pięć");
+        words4.add("sześć");
+        words4.add("siedem");
+        words4.add("osiem");
+        words4.add("dziewięć");
+
+        System.out.println(words4);
+
+        Collections.sort(words4, new Comparator<String>() { // comparator to jest interfejs,
+            @Override
+            public int compare(String o1, String o2) {
+
+                //przesłonieta metoda compare przyjmuje jako  argumenty dwa łancuchy znaków, które bedą prównywane i tak
+                // długo dopóki nie osiagniemy końca listy i tym samym wszystkie elementy nie zostana porównane  i posortowane
+
+                return o1.compareTo(o2);
+            }
+        });
+
+        System.out.println(words4);
 
     }
 
-    /**
-     * Metoda któa pierw skonweruje nam mapę do tablicy [do listy], nast epnie wykon na niej sortowanie, po czym znów
-     * przekonwertujemy posrtowana listę na mape i zwrócimy mapę; obiekt pozwalający na sekwencyjny dostęp do
-     * wszystkich elementów lub części zawartych w innym obiekcie
-     */
+        /**
+         * Poniżej rzadko uzywana Metoda która pierw skonweruje nam mapę do tablicy [do listy], nast epnie wykon na
+         * niej sortowanie, po czym znów przekonwertujemy posrtowana listę na mape i zwrócimy mapę; obiekt pozwalający
+         * na sekwencyjny dostęp do
+         * wszystkich elementów lub części zawartych w innym obiekcie
+         */
 
 
 
@@ -78,11 +107,9 @@ public class Sorting {
         return sortedHashMap;*/
 
 
-
-
-
     }
-}
+
+
 
 
 
