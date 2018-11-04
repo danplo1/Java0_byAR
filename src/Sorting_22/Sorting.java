@@ -45,7 +45,7 @@ public class Sorting {
         for (Map.Entry<String, String> entry2 : words3.entrySet()) {
             System.out.println("K: " + entry2.getKey() + " V " + entry2.getValue());
 
-            System.out.println("-----------------------");*/
+        System.out.println("-----------------------");*/
 
 
         List<String> words4 = new ArrayList<>();
@@ -60,8 +60,7 @@ public class Sorting {
         words4.add("dziewięć");
 
         System.out.println(words4);
-
-        Collections.sort(words4, new Comparator<String>() { // comparator to jest interfejs,
+        /*Collections.sort(words4, new Comparator<String>() { // comparator to jest interfejs,
             @Override
             public int compare(String o1, String o2) {
 
@@ -71,17 +70,21 @@ public class Sorting {
                 return o1.compareTo(o2);
             }
         });
+        System.out.println(words4)*/;
+        //najprostszy sposób
 
+        Collections.sort(words4);
         System.out.println(words4);
 
     }
 
-        /**
-         * Poniżej rzadko uzywana Metoda która pierw skonweruje nam mapę do tablicy [do listy], nast epnie wykon na
-         * niej sortowanie, po czym znów przekonwertujemy posrtowana listę na mape i zwrócimy mapę; obiekt pozwalający
-         * na sekwencyjny dostęp do
-         * wszystkich elementów lub części zawartych w innym obiekcie
-         */
+
+    /**
+     * Poniżej rzadko uzywana Metoda która pierw skonweruje nam mapę do tablicy [do listy], nast epnie wykon na
+     * niej sortowanie, po czym znów przekonwertujemy posrtowana listę na mape i zwrócimy mapę; obiekt pozwalający
+     * na sekwencyjny dostęp do
+     * wszystkich elementów lub części zawartych w innym obiekcie
+     */
 
 
 
@@ -107,7 +110,7 @@ public class Sorting {
         return sortedHashMap;*/
 
 
-    }
+}
 
 
 
