@@ -1,4 +1,4 @@
-package AbstractClassMethodAndInterface15_16;
+package abstractClassMethodAndInterface15_16;
 
 /**
  * Created by Daniel_D'AGE on 26.10.2018.

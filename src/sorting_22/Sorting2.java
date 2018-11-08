@@ -1,4 +1,4 @@
-package Sorting_22;
+package sorting_22;
 
 import java.util.ArrayList;
 import java.util.Collections;
