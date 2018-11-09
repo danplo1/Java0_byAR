@@ -1,6 +1,4 @@
-package threads_25_26;
-
-import com.sun.org.apache.bcel.internal.generic.NEW;
+package threads_25_26_27;
 
 /**
  * Created by Daniel_D'AGE on 08.11.2018.
@@ -44,19 +42,29 @@ public class Threads {
 
 
 
-        new NewThread("JEDEN");
-        new NewThread("DWA);
+        /*NewThread nt1 = new NewThread("JEDEN");
+        NewThread nt2 = new NewThread("DWA");
+        NewThread nt3 = new NewThread("TRZY");
 
-
+        System.out.println("WĄTEK " + nt1.thread.getName() + "" + nt1.thread.isAlive()); //metoda do sprawdzania czy wątek żyje, sprawdza jego stan
+        System.out.println("WĄTEK " + nt2.thread.getName() + "" + nt1.thread.isAlive());
+        System.out.println("WĄTEK " + nt3.thread.getName() + "" + nt1.thread.isAlive());
 
         try{
-            System.out.println("Usypiam wątek główny!");
-            Thread.sleep(9000);
-            System.out.println("Wznawiam wątek główny. ");
+            System.out.println(nt1.thread.isAlive());
+            System.out.println(nt2.thread.isAlive());
+            System.out.println(nt3.thread.isAlive());
+
+
+            nt1.thread.join();
+            nt2.thread.join();
+            nt1.thread.join();
+
+
         }catch(InterruptedException e){
             System.out.println("Przerwano wątek główny! ");
         }
-        System.out.println("Zakończonio wykonwanie wyjątku! ");
+        System.out.println("Zakończono wykonwanie wyjątku! ");*/
 
     }
 }
