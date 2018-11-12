@@ -44,7 +44,7 @@ class Writer implements Runnable {
 public static class Threadss {
     public static void main(String[] args) {
 
-        Write writer = new Write();
+        /*Write writer = new Write();
         Writer writer1 = new Writer(writer, "To jest ");
         Writer writer2 = new Writer(writer, "synchronizacja ");
         Writer writer3 = new Writer(writer, "wątków. ");
@@ -57,9 +57,9 @@ public static class Threadss {
 
         } catch (InterruptedException ex) {
 
-            System.out.println("Przerwano! ");
+            System.out.println("Przerwano! ");*/
         }
     }
 
 }
-}
+
