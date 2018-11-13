@@ -10,6 +10,24 @@ import java.util.*;
 public class Anagram {
     public static void main(String[] args) throws Exception {
 
+        Anagram anagram = new Anagram();
+
+        List<String> list = new ArrayList<String>();
+        List<String> anagramsList = new ArrayList<String>();
+
+        list = anagram.loadTheFile();
+
+        if (list.size() == 0) {
+            System.out.println("Nie wczytsano żadnych słów");
+        } else {
+            System.out.println(String.format("Wczytano %,d unikalnych słów.", list.size()));
+            anagramsList = anagram.findAnagrams(list);
+            System.out.println(String.format("Znaleziono %,d anagramów.", anagramsList.size()));
+
+            for (String s : anagramsList) {
+                System.out.println(s);
+            }
+        }
 
     }
 
@@ -22,8 +40,8 @@ public class Anagram {
         try {
             String line; //zmienna która przechowuje aktualnie odczytwaną linię
             while ((line = bufferedReader.readLine()) != null) { //czytanie kolejnych lini i sprawdzenie czy nie ma nulla
-                if (!line.equals("")) { // sprawdzenie czy linia nie jest pusta, jesli ie wrzucamy do kolekcji set
-                    wordsSet.add(line);
+                if (!line.equals("")) { // sprawdzenie czy linia nie jest pusta, jesli nie wrzucamy do kolekcji set
+                    wordsSet.add(line); // unikanie umieszczania w kolekci duplikatów
                 }
             }
             bufferedReader.close();
@@ -31,13 +49,13 @@ public class Anagram {
         } catch (Exception e) {
             System.out.println("Błąd odczytu pliku");
         }
-
+        return listWords;
     }
 
 
     public List<String> findAnagrams(List<String> listWords) {
 
-        Date date = new Date();
+        Date dateStart = new Date();
 
         String string = "Wyszukiwanie anagramów";
         long totalComp = 0;
@@ -63,6 +81,13 @@ public class Anagram {
             }
 
         }
+        System.out.println(String.format("\n\nLiczba wykonanych porównań %,d", totalComp));
+
+        Date dateEnd = new Date();
+        long time = (dateEnd.getTime() - dateStart.getTime()) / 1000;
+        System.out.println(String.format("Porównanie trwało %,d sekund", time));
+
+        return list;
 
     }
 
